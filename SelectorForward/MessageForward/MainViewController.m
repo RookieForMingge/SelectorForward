@@ -8,6 +8,8 @@
 #import "MainViewController.h"
 #import "Man.h"
 #import "SuperMan.h"
+#import "Son.h"
+
 #import <objc/runtime.h> //包含对类、成员变量、属性、方法的操作
 //#import <objc/message.h> 包含消息机制
 
@@ -20,14 +22,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //第一次转发：方法解析 Method resolution
-    [self FirsForward];
+//    //第一次转发：方法解析 Method resolution
+//    [self FirsForward];
+//
+//    //第二次转发：快速转发 Fast forwarding
+//    [self SecondForward];
+//
+//    //第三次转发：常规转发 Normal forwarding
+//    [self ThirdForward];
     
-    //第二次转发：快速转发 Fast forwarding
-    [self SecondForward];
-    
-    //第三次转发：常规转发 Normal forwarding
-    [self ThirdForward];
+    //unrecognized selector sent to instance 防护crash
+    [self testUnrecognizedSelectorCrash];
 }
 
 #pragma mark - 第一次转发：方法解析 Method resolution
@@ -80,6 +85,12 @@
     [man performSelector:@selector(code)];
     //三次转发都找不到的方法
     [man performSelector:@selector(missMethod)];
+}
+
+#pragma mark - unrecognized selector sent to instance 防护crash
+- (void)testUnrecognizedSelectorCrash {
+    Son *son = [Son new];
+    [son performSelector:@selector(missMethod)];
 }
 
 @end

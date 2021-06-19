@@ -6,9 +6,11 @@
 //
 
 #import "Man.h"
-#import <objc/runtime.h> //包含对类、成员变量、属性、方法的操作
 #import "Son.h"
 #import "CodeMan.h"
+
+#import <objc/runtime.h> //包含对类、成员变量、属性、方法的操作
+//#import "NSObject+MessageForwarding.h"
 
 @implementation Man
 
@@ -124,7 +126,7 @@ id dynamicClassMethodIMP(id self, SEL _cmd) {
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
     NSLog(@"第三次转发：常规转发----method signature for selector: %@", NSStringFromSelector(aSelector));
     if (aSelector == @selector(code)) {
-        return [NSMethodSignature signatureWithObjCTypes:"V@:@"];
+        return [NSMethodSignature signatureWithObjCTypes:"v@:@"];
     }
     return [super methodSignatureForSelector:aSelector];
 }
@@ -132,11 +134,18 @@ id dynamicClassMethodIMP(id self, SEL _cmd) {
 //拿到方法签名，并且处理（创建备用对象响应传递进来等待响应的SEL）
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
     NSLog(@"forwardInvocation: %@", NSStringFromSelector([anInvocation selector]));
+    
     if ([anInvocation selector] == @selector(code)) {
         //创建备用对象
         CodeMan *codeMan = [[CodeMan alloc] init];
         //备用对象响应传递进来等待响应的SEL
         [anInvocation invokeWithTarget:codeMan];
+    }else {        
+        [super forwardInvocation:anInvocation];
+        
+//        //如果处理不了的话，调用doesNotRecognizeSelector方法返回崩溃
+//        SEL sel = anInvocation.selector;
+//        [self doesNotRecognizeSelector:sel];
     }
 }
 
@@ -144,6 +153,10 @@ id dynamicClassMethodIMP(id self, SEL _cmd) {
 - (void)doesNotRecognizeSelector:(SEL)aSelector {
     NSLog(@"doesNotRecognizeSelector: %@", NSStringFromSelector(aSelector));
     [super doesNotRecognizeSelector:aSelector];
+}
+
+- (void)showMessage:(NSString*)message{
+    NSLog(@"message = %@",message);
 }
 
 @end

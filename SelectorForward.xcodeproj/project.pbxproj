@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6BC1B465267202FA00F07D02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1B464267202FA00F07D02 /* AppDelegate.m */; };
-		6BC1B468267202FA00F07D02 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1B467267202FA00F07D02 /* SceneDelegate.m */; };
+		6B397702267E22A9007ECEC6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3976FF267E22A8007ECEC6 /* SceneDelegate.m */; };
+		6B397703267E22A9007ECEC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B397700267E22A8007ECEC6 /* AppDelegate.m */; };
+		6B397712267E2313007ECEC6 /* SuperMan.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B397708267E2313007ECEC6 /* SuperMan.m */; };
+		6B397713267E2313007ECEC6 /* Man.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B397709267E2313007ECEC6 /* Man.m */; };
+		6B397714267E2313007ECEC6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B39770C267E2313007ECEC6 /* MainViewController.m */; };
+		6B397715267E2313007ECEC6 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B39770D267E2313007ECEC6 /* Son.m */; };
+		6B397716267E2313007ECEC6 /* CodeMan.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B397710267E2313007ECEC6 /* CodeMan.m */; };
+		6B397734267E3837007ECEC6 /* NSObject+MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B397733267E3837007ECEC6 /* NSObject+MethodSwizzling.m */; };
+		6B39773A267E38C4007ECEC6 /* NSObject+SelectorForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B397739267E38C4007ECEC6 /* NSObject+SelectorForwarding.m */; };
 		6BC1B46E267202FA00F07D02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC1B46C267202FA00F07D02 /* Main.storyboard */; };
 		6BC1B470267202FB00F07D02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC1B46F267202FB00F07D02 /* Assets.xcassets */; };
 		6BC1B473267202FB00F07D02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC1B471267202FB00F07D02 /* LaunchScreen.storyboard */; };
 		6BC1B476267202FB00F07D02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1B475267202FB00F07D02 /* main.m */; };
 		6BC1B480267202FB00F07D02 /* SelectorForwardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1B47F267202FB00F07D02 /* SelectorForwardTests.m */; };
 		6BC1B48B267202FB00F07D02 /* SelectorForwardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1B48A267202FB00F07D02 /* SelectorForwardUITests.m */; };
-		6BC1B49D2672033E00F07D02 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1B49C2672033E00F07D02 /* MainViewController.m */; };
-		6BC1B4A9267205E100F07D02 /* Man.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1B4A8267205E100F07D02 /* Man.m */; };
-		6BC1B4BB2672FCDB00F07D02 /* SuperMan.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1B4BA2672FCDB00F07D02 /* SuperMan.m */; };
-		6BC1B4C72673111100F07D02 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1B4C62673111100F07D02 /* Son.m */; };
-		6BC1B4CD267330B300F07D02 /* CodeMan.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1B4CC267330B300F07D02 /* CodeMan.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +42,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B3976FE267E22A8007ECEC6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B3976FF267E22A8007ECEC6 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		6B397700267E22A8007ECEC6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B397701267E22A8007ECEC6 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		6B397708267E2313007ECEC6 /* SuperMan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperMan.m; sourceTree = "<group>"; };
+		6B397709267E2313007ECEC6 /* Man.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Man.m; sourceTree = "<group>"; };
+		6B39770A267E2313007ECEC6 /* Son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		6B39770B267E2313007ECEC6 /* CodeMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeMan.h; sourceTree = "<group>"; };
+		6B39770C267E2313007ECEC6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		6B39770D267E2313007ECEC6 /* Son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		6B39770E267E2313007ECEC6 /* SuperMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperMan.h; sourceTree = "<group>"; };
+		6B39770F267E2313007ECEC6 /* Man.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Man.h; sourceTree = "<group>"; };
+		6B397710267E2313007ECEC6 /* CodeMan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeMan.m; sourceTree = "<group>"; };
+		6B397711267E2313007ECEC6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		6B397732267E3837007ECEC6 /* NSObject+MethodSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodSwizzling.h"; sourceTree = "<group>"; };
+		6B397733267E3837007ECEC6 /* NSObject+MethodSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwizzling.m"; sourceTree = "<group>"; };
+		6B397738267E38C4007ECEC6 /* NSObject+SelectorForwarding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SelectorForwarding.h"; sourceTree = "<group>"; };
+		6B397739267E38C4007ECEC6 /* NSObject+SelectorForwarding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SelectorForwarding.m"; sourceTree = "<group>"; };
 		6BC1B460267202FA00F07D02 /* SelectorForward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectorForward.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BC1B463267202FA00F07D02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6BC1B464267202FA00F07D02 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6BC1B466267202FA00F07D02 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		6BC1B467267202FA00F07D02 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		6BC1B46D267202FA00F07D02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BC1B46F267202FB00F07D02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BC1B472267202FB00F07D02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,16 +72,6 @@
 		6BC1B486267202FB00F07D02 /* SelectorForwardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectorForwardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC1B48A267202FB00F07D02 /* SelectorForwardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectorForwardUITests.m; sourceTree = "<group>"; };
 		6BC1B48C267202FB00F07D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6BC1B49B2672033E00F07D02 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		6BC1B49C2672033E00F07D02 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		6BC1B4A7267205E100F07D02 /* Man.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Man.h; sourceTree = "<group>"; };
-		6BC1B4A8267205E100F07D02 /* Man.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Man.m; sourceTree = "<group>"; };
-		6BC1B4B92672FCDB00F07D02 /* SuperMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperMan.h; sourceTree = "<group>"; };
-		6BC1B4BA2672FCDB00F07D02 /* SuperMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperMan.m; sourceTree = "<group>"; };
-		6BC1B4C52673111100F07D02 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
-		6BC1B4C62673111100F07D02 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
-		6BC1B4CB267330B300F07D02 /* CodeMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeMan.h; sourceTree = "<group>"; };
-		6BC1B4CC267330B300F07D02 /* CodeMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeMan.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B3976FD267E22A8007ECEC6 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6B3976FE267E22A8007ECEC6 /* AppDelegate.h */,
+				6B397700267E22A8007ECEC6 /* AppDelegate.m */,
+				6B397701267E22A8007ECEC6 /* SceneDelegate.h */,
+				6B3976FF267E22A8007ECEC6 /* SceneDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		6B397707267E2313007ECEC6 /* MessageForward */ = {
+			isa = PBXGroup;
+			children = (
+				6B397711267E2313007ECEC6 /* MainViewController.h */,
+				6B39770C267E2313007ECEC6 /* MainViewController.m */,
+				6B39770F267E2313007ECEC6 /* Man.h */,
+				6B397709267E2313007ECEC6 /* Man.m */,
+				6B39770A267E2313007ECEC6 /* Son.h */,
+				6B39770D267E2313007ECEC6 /* Son.m */,
+				6B39770E267E2313007ECEC6 /* SuperMan.h */,
+				6B397708267E2313007ECEC6 /* SuperMan.m */,
+				6B39770B267E2313007ECEC6 /* CodeMan.h */,
+				6B397710267E2313007ECEC6 /* CodeMan.m */,
+			);
+			path = MessageForward;
+			sourceTree = "<group>";
+		};
+		6B39771A267E2464007ECEC6 /* Method-Swizzling */ = {
+			isa = PBXGroup;
+			children = (
+				6B397732267E3837007ECEC6 /* NSObject+MethodSwizzling.h */,
+				6B397733267E3837007ECEC6 /* NSObject+MethodSwizzling.m */,
+				6B397738267E38C4007ECEC6 /* NSObject+SelectorForwarding.h */,
+				6B397739267E38C4007ECEC6 /* NSObject+SelectorForwarding.m */,
+			);
+			path = "Method-Swizzling";
+			sourceTree = "<group>";
+		};
 		6BC1B457267202FA00F07D02 = {
 			isa = PBXGroup;
 			children = (
@@ -116,25 +161,14 @@
 		6BC1B462267202FA00F07D02 /* SelectorForward */ = {
 			isa = PBXGroup;
 			children = (
-				6BC1B463267202FA00F07D02 /* AppDelegate.h */,
-				6BC1B464267202FA00F07D02 /* AppDelegate.m */,
-				6BC1B466267202FA00F07D02 /* SceneDelegate.h */,
-				6BC1B467267202FA00F07D02 /* SceneDelegate.m */,
+				6B3976FD267E22A8007ECEC6 /* AppDelegate */,
+				6B39771A267E2464007ECEC6 /* Method-Swizzling */,
+				6B397707267E2313007ECEC6 /* MessageForward */,
 				6BC1B46C267202FA00F07D02 /* Main.storyboard */,
 				6BC1B46F267202FB00F07D02 /* Assets.xcassets */,
 				6BC1B471267202FB00F07D02 /* LaunchScreen.storyboard */,
 				6BC1B474267202FB00F07D02 /* Info.plist */,
 				6BC1B475267202FB00F07D02 /* main.m */,
-				6BC1B49B2672033E00F07D02 /* MainViewController.h */,
-				6BC1B49C2672033E00F07D02 /* MainViewController.m */,
-				6BC1B4A7267205E100F07D02 /* Man.h */,
-				6BC1B4A8267205E100F07D02 /* Man.m */,
-				6BC1B4B92672FCDB00F07D02 /* SuperMan.h */,
-				6BC1B4BA2672FCDB00F07D02 /* SuperMan.m */,
-				6BC1B4C52673111100F07D02 /* Son.h */,
-				6BC1B4C62673111100F07D02 /* Son.m */,
-				6BC1B4CB267330B300F07D02 /* CodeMan.h */,
-				6BC1B4CC267330B300F07D02 /* CodeMan.m */,
 			);
 			path = SelectorForward;
 			sourceTree = "<group>";
@@ -286,14 +320,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BC1B4C72673111100F07D02 /* Son.m in Sources */,
-				6BC1B4BB2672FCDB00F07D02 /* SuperMan.m in Sources */,
-				6BC1B465267202FA00F07D02 /* AppDelegate.m in Sources */,
-				6BC1B4CD267330B300F07D02 /* CodeMan.m in Sources */,
-				6BC1B4A9267205E100F07D02 /* Man.m in Sources */,
+				6B397715267E2313007ECEC6 /* Son.m in Sources */,
+				6B397734267E3837007ECEC6 /* NSObject+MethodSwizzling.m in Sources */,
+				6B397712267E2313007ECEC6 /* SuperMan.m in Sources */,
+				6B397714267E2313007ECEC6 /* MainViewController.m in Sources */,
+				6B397716267E2313007ECEC6 /* CodeMan.m in Sources */,
+				6B397703267E22A9007ECEC6 /* AppDelegate.m in Sources */,
+				6B397713267E2313007ECEC6 /* Man.m in Sources */,
+				6B397702267E22A9007ECEC6 /* SceneDelegate.m in Sources */,
 				6BC1B476267202FB00F07D02 /* main.m in Sources */,
-				6BC1B49D2672033E00F07D02 /* MainViewController.m in Sources */,
-				6BC1B468267202FA00F07D02 /* SceneDelegate.m in Sources */,
+				6B39773A267E38C4007ECEC6 /* NSObject+SelectorForwarding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
